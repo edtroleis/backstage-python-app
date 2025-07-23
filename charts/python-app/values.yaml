@@ -1,8 +1,8 @@
 replicaCount: 1
 image:
-  repository: ricardoandre9707/python-app
+  repository: edtroleis/python-app
   pullPolicy: IfNotPresent
-  tag: ed7159
+  tag: "1.0.0"
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
