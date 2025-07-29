@@ -28,11 +28,11 @@
 - Kubernetes deployment
 
 
-# Environemnt Setup
+# Environment Setup
 
 - [Python App](./docs/app.md)
 - [Kubernetes Cluster - Kind](./docs/kubernetes.md)
 - [Deploy Python App on Kubernetes](./docs/deploy-python-app.md)
 - [Deploy Python App on Kubernetes with Helm](./docs/deploy-python-app-helm.md)
 - [Install ArgoCD](./docs/install-argocd.md)
-
+- [Create full environment](./docs/create-full-environment.md)
