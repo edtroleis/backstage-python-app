@@ -10,9 +10,6 @@ chmod +x ./kind
 sudo mv ./kind /usr/local/bin/kind
 ```
 
-## Create kind cluster with Ingress controller
-```bash
-
 ### Create a Kind cluster with extra port mappings for HTTP and HTTPS
 ```bash
 cat <<EOF | kind create cluster --config=-
@@ -28,7 +25,6 @@ nodes:
     hostPort: 443
     protocol: TCP
 EOF
-
 ```
 
 ### Verify the cluster

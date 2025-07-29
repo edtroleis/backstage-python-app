@@ -34,5 +34,5 @@
 - [Kubernetes Cluster - Kind](./docs/kubernetes.md)
 - [Deploy Python App on Kubernetes](./docs/deploy-python-app.md)
 - [Deploy Python App on Kubernetes with Helm](./docs/deploy-python-app-helm.md)
-
+- [Install ArgoCD](./docs/install-argocd.md)
 
