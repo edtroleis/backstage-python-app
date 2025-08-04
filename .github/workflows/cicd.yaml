@@ -14,10 +14,16 @@ on:
         default: "Manual deployment"
         type: string
 
+# Add permissions for the workflow
+permissions:
+  contents: write
+  packages: write
+
 jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Shorten commit id
         shell: bash
         run: |
@@ -39,7 +45,7 @@ jobs:
     needs: ci
     runs-on: self-hosted
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Modify values file
         shell: bash
@@ -52,6 +58,8 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           message: "Updates values.yaml with commit ${{needs.ci.outputs.commit_id}}"
+          default_author: github_actions
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install argocd
         shell: bash
