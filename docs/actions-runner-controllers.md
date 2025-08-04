@@ -49,4 +49,12 @@ spec:
 EOF
 ```
 
+### Check status of the runner
+```bash
 kubectl get pods -n actions-runner-system
+```
+
+## Deploy app in ArgoCD using command line
+```bash
+argocd login argocd.test.com --insecure --grpc-web
+```
