@@ -2,7 +2,7 @@ replicaCount: 1
 image:
   repository: edtroleis/python-app
   pullPolicy: IfNotPresent
-  tag: "1.0.0"
+  tag: "26bc05"
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
